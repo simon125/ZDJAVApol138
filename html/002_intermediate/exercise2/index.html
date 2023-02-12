@@ -7,3 +7,74 @@
   hint2: użyj elementów blokowych do pogrupowania labelek i inputów tak żeby każdy input i labelka ułożyły się jeden po drugim
 
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        Jak masz na imie?
+        <input type="imie(max 20 znaków" placeholder="imie" maxlength="20" />
+      </div>
+
+      Jak masz na nazwisko?
+      <input
+        type="nazwisko(max 20 znaków"
+        placeholder="nazwisko"
+        maxlength="20"
+      />
+      <br />
+      Podaj hasło <input type="password" placeholder="hasło" />
+      <br />
+      Powtórz hasło <input type="password" placeholder="powtórz hasło" />
+      <br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie1</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <div>
+      <label>Jak masz na imię?</label>
+      <input type="text" placeholder="Imię (max 20 znaków)" maxlength="20" />
+    </div>
+    <div>
+      <label>Jak masz na nazwisko?</label>
+      <input
+        type="text"
+        placeholder="Nazwisko (max 20 znaków)"
+        maxlength="20"
+      />
+    </div>
+    <div>
+      <label>Podaj hasło</label>
+      <input type="password" placeholder="Hasło" />
+    </div>
+    <div>
+      <label for="repeatPassword">Powtórz hasło</label>
+      <input id="repeatPassword" type="password" placeholder="Powtórz hasło" />
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </body>
+</html>
