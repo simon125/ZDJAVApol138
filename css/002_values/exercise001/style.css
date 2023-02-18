@@ -1,0 +1,21 @@
+body {
+  background-color: #d9d5cf;
+}
+.heading {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+p {
+  color: red;
+  font-weight: bold;
+}
+ul {
+  margin: 100px;
+}
+li {
+  background-color: purple;
+}
+.list-item--white {
+  background-color: white;
+}
