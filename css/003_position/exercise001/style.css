@@ -1,0 +1,20 @@
+body {
+  background-color: paleturquoise;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+}
+
+.square-1 {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+.square-3 {
+  position: relative;
+  left: 150px;
+}
