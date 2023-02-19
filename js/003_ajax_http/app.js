@@ -16,15 +16,51 @@
  * 
  */
 
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let htmlTableRows = "";
+
+    for (let i = 0; i < data.length; i++) {
+      console.log(data[i].completed);
+      htmlTableRows =
+        htmlTableRows +
+        `<tr>
+       <td>${data[i].id}</td>
+       <td>${data[i].title}</td>
+       <td>
+          <input type="checkbox" checked="${data[i].completed}"/>
+       </td>
+   
+       </tr>`;
+    }
+
+    const tbody = document.getElementById("todos");
+
+    tbody.innerHTML = htmlTableRows;
+  })
+  .catch(() => {
+    console.error("Coś poszło nie tak skontatkuj się z ADMINem");
+  })
+  .finally(() => {});
+
 /**
  * dodawanie nowego uzytkownika *
  */
 
-// document.querySelector("#createUserForm").addEventListener("submit", (e) => {
-//   e.preventDefault();
+document.querySelector("#createUserForm").addEventListener("submit", (e) => {
+  e.preventDefault();
 
-//   const formData = new FormData(e.target);
-//   const formProps = Object.fromEntries(formData);
+  const formData = new FormData(e.target);
+  const formProps = Object.fromEntries(formData);
 
-//   console.log(formProps);
-// });
+  fetch("https://jsonplaceholder.typicode.com/users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formProps),
+  });
+});
