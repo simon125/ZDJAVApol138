@@ -31,7 +31,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
        <td>${data[i].id}</td>
        <td>${data[i].title}</td>
        <td>
-          <input type="checkbox" checked="${data[i].completed}"/>
+          <input type="checkbox" ${data[i].completed && "checked"}/>
        </td>
    
        </tr>`;
