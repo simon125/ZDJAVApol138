@@ -1,7 +1,0 @@
-/**
- * localstorage & sessionstorage
- */
-
-/**
- * coockies
- */
