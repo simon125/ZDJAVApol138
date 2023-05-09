@@ -15,6 +15,15 @@
  * narzędzia deweloperskie
  */
 
+// String nazwaZmiennej = "adfasd";
+int;
+float;
+
+let nazwaZmiennej = "fwefwef";
+let nazwaZmiennej1 = 2131;
+
+console.log("hello world");
+
 /**
  * typy danych
  *

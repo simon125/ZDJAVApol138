@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
+    <style>
+      .outer-div {
+        margin: 20px;
+        background-color: papayawhip;
+        border: 5px solid red;
+        padding: 20px;
+        height: 50vh;
+
+        display: flex;
+        /* justify-content: center; */
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 5px;
+      }
+    </style>
   </head>
   <body>
     <h1>Pozycjonowanie</h1>
@@ -13,9 +34,13 @@
       <li>tabele* 🤮</li>
       <li>position</li>
       <li>display</li>
-      <div>trelemorele</div>
     </ol>
 
-    <p>Przykład modala</p>
+    <div class="outer-div">
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+    </div>
   </body>
 </html>

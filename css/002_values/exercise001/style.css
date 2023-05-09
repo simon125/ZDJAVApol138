@@ -1,0 +1,25 @@
+body {
+  background-color: gainsboro;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 300;
+}
+
+.pargraph {
+  color: red;
+  font-weight: 700;
+}
+
+ul {
+  margin: 100px;
+}
+
+li {
+  background-color: blueviolet;
+}
+
+.list-item--white {
+  background-color: white;
+}
