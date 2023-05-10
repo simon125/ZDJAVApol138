@@ -16,6 +16,30 @@
  * 
  */
 
+const przycisk = document.querySelector("#fetchButton");
+// przycisk.remove();
+
+przycisk.addEventListener("click", () => {
+  fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      const tbody = document.querySelector("#todos");
+      // tworzenie elemntów html w js za pomocą stringów
+      // const div = `<div>${123}</div>`;
+
+      let trki = "";
+
+      data.forEach((todo) => {
+        trki = `<tr><td>${todo.id}</td><td>${todo.title}</td></tr>` + trki;
+      });
+
+      tbody.innerHTML = trki;
+    });
+});
+
 /**
  * dodawanie nowego uzytkownika *
  */
